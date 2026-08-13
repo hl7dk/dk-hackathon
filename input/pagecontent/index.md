@@ -29,7 +29,11 @@ The hackathon includes three tracks:
 Two preparatory meetings were held before the hackathon:
 
 - **Webinar 1 - September 22, 9-10am**: General introduction, track overview, and homework.
+    - [Join webinar 1](https://teams.microsoft.com/meet/370624882988552?p=WSxdeU6zp2JXwrjjtL) 
 - **Webinar 2 - Septemer 29, 1 hour for each track from 9-12am**: Track session intro, Q&A and homework
+    - [9-10 am: Join webinar 2: Agentic Patient Access](https://teams.microsoft.com/meet/387492151603140?p=t6dNzjL47iEH0PR7xc)
+    - [10-11 am: Join webinar 2: Telemedicine (beginners)](https://teams.microsoft.com/meet/346727888188201?p=DbY9axOCNNxP9DNiZe)
+    - [11-12 am: Join webinar 2: Your Health, Your Data](https://teams.microsoft.com/meet/329122681328858?p=aPL1oJIi62sUOkZBTU)
 
 Each session will be recorded.
 

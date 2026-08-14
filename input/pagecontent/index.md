@@ -6,6 +6,8 @@ The Dk-hackathon is held the day before the Danish e-health conference [eSundhed
 
 This hackathon is part of the [Nordic Health Data Hackathons](https://fhir.fi/hackathon/) series.
 
+[Sign up here](https://medcom.nemtilmeld.dk/99/) for the hackathon. Registration deadline is September 15. 
+
 ### Tracks
 
 The hackathon includes three tracks:

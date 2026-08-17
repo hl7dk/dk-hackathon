@@ -56,8 +56,8 @@ pages:
     title: "Track 1: Agentic Patient Access"
   track-telemedicine.md:
     title: "Track 2: Telemedicine"
-  track-3.md:
-    title: "Track 3: To be announced"
+  track-your-health-your-data.md:
+    title: "Track 3: Your Health, Your Data - Building the Personal Health Dataspace"
   results.md:
     title: Results
 
@@ -66,7 +66,7 @@ menu:
   Preparation: preparation.html
   Agentic Patient Access: track-agentic-patient-access.html
   Telemedicine: track-telemedicine.html
-  Track 3: track-3.html
+  Track 3: track-your-health-your-data.html
   Artifacts: artifacts.html
   Results: results.html
 #

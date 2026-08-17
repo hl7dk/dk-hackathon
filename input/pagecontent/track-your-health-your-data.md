@@ -22,13 +22,14 @@ This track hopes to demonstrate — at least in prototype form — some of the f
 - Citizen consent for both primary and secondary (research) use of health data can be represented and enforced using FHIR Consent resources and established profiles
 - Components built independently by different participants can interoperate, at least at the level of exchanging valid FHIR resources against a shared server
 
----
 
 ### The Shared Platform
 
-**⚠️ Preliminary section ⚠️**
+---
 
-To give participants something to build *towards* and *against*, the track will provide a pre-deployed shared FHIR (R4??) server running [HAPI FHIR](https://github.com/hapifhir/hapi-fhir), configured with:
+> **⚠️ Preliminary section ⚠️**
+
+To give participants something to build *towards* and *against*, the track will provide a pre-deployed shared FHIR (R4) server running [HAPI FHIR](https://github.com/hapifhir/hapi-fhir), configured with:
 
 - A small set of synthetic test patients (using [dk-core](https://build.fhir.org/ig/hl7dk/dk-core/) Patient profiles)
 - SMART on FHIR authorization enabled
@@ -38,7 +39,10 @@ Participants are not required to use this server. Anyone who prefers to run thei
 
 Details of the shared server URL, credentials, and SMART configuration will be shared at the preparatory webinar.
 
+> **⚠️ Preliminary section ⚠️**
+
 ---
+
 
 ### Component Ideas
 
@@ -47,7 +51,7 @@ The following is an illustrative — not exhaustive — list of components parti
 #### Group 1 — Data Sources: Getting data into the PHR
 
 - **EHR → PHR connector**: A SMART on FHIR client that reads resources from a clinical system exposing an [IPA-conformant](https://build.fhir.org/ig/HL7/fhir-ipa/) API and writes them into the shared PHR. A public IPA-conformant sandbox (e.g. [Firely Server sandbox](https://server.fire.ly/) or [HAPI public test server](https://hapi.fhir.org/)) can substitute for a real EHR.
-- **MedCom → PHR adapter**: A component that consumes a MedCom FHIR message (e.g. a hospital discharge letter or a lab result) and stores the relevant resources in the PHR.
+- **MedCom → PHR adapter**: A component that consumes a [MedCom FHIR message](https://medcomdk.github.io/MedComLandingPage/) (e.g. a [ConditionList](https://medcomdk.github.io/dk-medcom-conditionlist/) or [CareCommunication](https://medcomdk.github.io/dk-medcom-carecommunication/)) and stores the relevant resources in the PHR.
 - **Apple HealthKit → PHR**: An iOS component (Swift) using [HealthKitOnFHIR](https://github.com/StanfordBDHG/HealthkitOnFHIR) to map HealthKit samples to FHIR Observation resources and POST them to the shared server.
 - **Google Health Connect → PHR**: An Android component using the [Health Connect SDK](https://developer.android.com/health-and-fitness/guides/health-connect) to map exercise, sleep, and vital-sign data to FHIR Observations.
 - **Withings / Garmin / other wearable → PHR**: A backend service (any language) using a device vendor's REST API to pull measurements and convert them to FHIR Observations.
@@ -71,7 +75,6 @@ The following is an illustrative — not exhaustive — list of components parti
 - **Consent management service**: An integration with [gICS](https://github.com/mosaic-hgw/gICS) (generic Informed Consent Service, open source, FHIR-enabled), demonstrating how a research-grade consent management tool connects to a citizen-controlled PHR.
 - **Research export**: A component that queries the PHR for consented patient data and produces a FHIR Bundle suitable for ingestion into a research platform, respecting the scope encoded in the `Consent` resource.
 
----
 
 ### Coordination
 
@@ -81,7 +84,6 @@ That said, there is real value in knowing what others are building — both to a
 
 During the closing session, participants who wish to attempt a live integration demo are encouraged to identify potential "connection points" with other components — but this is entirely optional and should not drive scope decisions on the day.
 
----
 
 ### Prerequisites
 
@@ -94,7 +96,6 @@ Participants should arrive prepared. Before the hackathon:
 - **Have a FHIR validator ready**: Either the [online FHIR Validator](https://validator.fhir.org/) or a local installation of the [HL7 FHIR Validator CLI](https://confluence.hl7.org/display/FHIR/Using+the+FHIR+Validator).
 - **Declare your intent**: Post a brief description of what you plan to build on the [FHIR Zulip #nordics channel](https://chat.fhir.org/#narrow/channel/194447-nordics) before the preparatory webinar.
 
----
 
 ### Expected Outcomes
 
@@ -106,7 +107,6 @@ Participants are not expected to deliver a production-ready system. A successful
 
 The track lead will collect links to all repositories and write-ups after the hackathon and compile a summary for the [Results](results.html) page and for the HL7 Denmark pitch session at [eSundhedsobservatoriet](https://2026.e-sundhedsobservatoriet.dk/) on October 7.
 
----
 
 ### Resources
 
@@ -123,7 +123,8 @@ The track lead will collect links to all repositories and write-ups after the ha
 | [EU Health Data API IG (EURIDICE)](https://euridice.org/eu-health-data-api/) | Joint HL7 Europe / IHE specification for EHDS Article 15 EHR interoperability component. |
 | [HL7 Europe Base/Core IG](https://build.fhir.org/ig/hl7-eu/base/) | Common EU FHIR foundation. |
 | [DK-Core IG](https://build.fhir.org/ig/hl7dk/dk-core/) | Danish base profiles: Patient (CPR), Practitioner, Organisation, etc. |
-| [MedCom FHIR](https://medcom.dk/standarder/fhir/) | Danish healthcare messaging profiles. |
+| [DK SMART IG](https://hl7.dk/fhir/smart/index.html) | Danish SMART App Launch Specification. |
+| [MedCom FHIR](https://medcomdk.github.io/MedComLandingPage/) | Danish healthcare messaging profiles. |
 | [Nordic FHIR Terminology Server](https://tx-nordics.fhir.org/fhir) | Shared terminology server for the Nordic countries. |
 
 #### Open source tools and platforms
@@ -137,6 +138,7 @@ The track lead will collect links to all repositories and write-ups after the ha
 | [EUDI Wallet reference implementations](https://github.com/eu-digital-identity-wallet) | Various | EU Digital Identity Wallet — Android, iOS, and issuer libraries. All open source. |
 | [SMART Health Links reference](https://github.com/smart-on-fhir/smart-health-links) | TypeScript | Reference implementation of the SMART Health Links specification. |
 | [openFHIR](https://github.com/openFHIR/openfhir) | TypeScript | Bidirectional openEHR ↔ FHIR mapping engine. Useful if working with openEHR-based systems. |
+| [eHealth Reference Clients](https://github.com/fut-infrastructure/ehealth-reference-clients) | Java | Reference client implementations for the DK eHealth infrastructure (FUT). |
 
 #### Data sources
 
@@ -159,7 +161,6 @@ The track lead will collect links to all repositories and write-ups after the ha
 | [FHIR Validator](https://validator.fhir.org/) | Online FHIR resource validator. |
 | [FHIR Shorthand (FSH)](https://hl7.org/fhir/uv/shorthand/) | If you want to define profiles as part of your work. |
 
----
 
 ### Results
 

@@ -6,13 +6,15 @@ The Dk-hackathon is held the day before the Danish e-health conference [eSundhed
 
 This hackathon is part of the [Nordic Health Data Hackathons](https://fhir.fi/hackathon/) series.
 
+[Sign up here](https://medcom.nemtilmeld.dk/99/) for the hackathon. Registration deadline is September 15. 
+
 ### Tracks
 
 The hackathon includes three tracks:
 
 1. **[Agentic Patient Access](track-agentic-patient-access.html)** - Led by Jens Villadsen
 2. **[Telemedicin (beginners)](track-telemedicine.html)** - Led by Kirstine Rosenbeck
-3. **[Your Health, Your Data – Building the Personal Health Dataspace](track-your-health-your-data.html)** - Led by Jacob Andersen 
+3. **[To be announced](track-3.html)** - Led by ... 
 
 ### Schedule
 
@@ -29,7 +31,11 @@ The hackathon includes three tracks:
 Two preparatory meetings were held before the hackathon:
 
 - **Webinar 1 - September 22, 9-10am**: General introduction, track overview, and homework.
+    - [Join webinar 1](https://teams.microsoft.com/meet/370624882988552?p=WSxdeU6zp2JXwrjjtL) 
 - **Webinar 2 - Septemer 29, 1 hour for each track from 9-12am**: Track session intro, Q&A and homework
+    - [9-10 am: Join webinar 2: Agentic Patient Access](https://teams.microsoft.com/meet/387492151603140?p=t6dNzjL47iEH0PR7xc)
+    - [10-11 am: Join webinar 2: Telemedicine (beginners)](https://teams.microsoft.com/meet/346727888188201?p=DbY9axOCNNxP9DNiZe)
+    - [11-12 am: Join webinar 2: Your Health, Your Data](https://teams.microsoft.com/meet/329122681328858?p=aPL1oJIi62sUOkZBTU)
 
 Each session will be recorded.
 
@@ -52,5 +58,5 @@ HL7 Denmark has a pitch session at eSundhedsobservatoriet on October 7. The resu
 
 If you have questions, feedback, or run into issues, please reach out:
 
-- [Discussion on FHIR Zulip](https://chat.fhir.org/#narrow/channel/194447-nordics) - #nordics channel
+- [Discussion on FHIR Zulip](??) - #nordics channel
 - PRs to this IG are welcome at [hl7dk/dk-hackathons](https://github.com/hl7dk/dk-hackathons)

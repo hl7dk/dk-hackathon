@@ -6,10 +6,12 @@ This page consolidates the outcomes from all three tracks of the Vitalis Hackath
 
 
 
-### Track 2: Terminology
+### Track 2: Telemedicine
 
-(See the [Terminology track](track-terminology.html) for the full track description.)
+(See the [Telemedicine track](track-telemedicine.html) for the full track description.)
 
 
 
-### Track 3: 
+### Track 3: Your Health, Your data
+
+(See the [Your Health, Your Data track](track-your-health-your-data.html) for the full track description.) 

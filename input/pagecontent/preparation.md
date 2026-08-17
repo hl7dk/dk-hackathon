@@ -26,7 +26,7 @@ Agenda:
   - Continue working on your track preparation
   - Come to the hackathon ready to hit the ground running
 
-**To be announced by someone from 11-12 am**
+**Your Health, Your Data by Jacob Andersen from 11-12 am**
 - Intro
 - Q&A session - bring your questions
 - **Homework for participants**:
@@ -35,4 +35,4 @@ Agenda:
 
 ### Hackathon - October
 
-The main event in Odense, Denmarj. Come prepared to collaborate, hack and build!
+The main event in Odense, Denmark. Come prepared to collaborate, hack and build!
